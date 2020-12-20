@@ -1,0 +1,41 @@
+<link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+<h1> Index </h1>
+<br>
+<a href="basics.html">HTML Basics</a>
+<br>
+<a href="jsbasics.html">JavaScript Basics</a>
+<br>
+<a href="CSSbasics.html">CSS Basics</a>
+<br>
+<br>
+<button onclick="myFunction()">View On GitHub </button>
+<style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
+
+<button onclick="changeMode()">Toggle dark mode</button>
+
+<script>
+function changeMode() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+
+
+<script>
+function myFunction() {
+  location.replace("https://github.com/MrNobody326/htmlbasics/")
+}
+</script>
